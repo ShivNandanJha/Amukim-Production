@@ -14,7 +14,7 @@ import img8 from "../assets/img9.jpg";
 export function InViewImagesGrid() {
   return (
     <div className="h-full w-full overflow-auto">
-      <div className="flex h-[1200px] items-end justify-center pb-12">
+      <div className="flex h-auto  justify-center ">
         <InView
           viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}
           variants={{
