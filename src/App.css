@@ -1,0 +1,206 @@
+
+
+.navbar {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+.menu-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* Parallax effect */
+.about-me-section {
+  position: relative;
+  height: 100vh;
+
+  color: white;
+}
+
+
+/* Container for the image and text */
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Image grid container with hover effect */
+.image-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-image {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #444;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.grid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover effect: image scaling */
+.grid-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Text section */
+.about-text h2 {
+  color: #fff;
+}
+
+.about-text h3 {
+  color: #aaa;
+}
+
+.about-text p {
+  color: #ddd;
+}
+/* Container for the service section */
+.services-section {
+  background-color:rgb(185, 184, 184);
+  color: white;
+}
+
+/* Service grid item */
+.service-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Service background image */
+.service-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+/* Service name in the center */
+.service-name {
+  z-index: 1;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* See More button */
+.see-more-button {
+  z-index: 1;
+}
+
+.see-more-button button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect: Show color and change the content */
+.service-item:hover .service-bg {
+  filter: grayscale(0%);
+}
+
+.service-item:hover .service-name {
+  opacity: 0;
+}
+
+.service-item:hover .see-more-button {
+  opacity: 1;
+}
+
+/* Service Details Section */
+.service-details-section {
+  background-color: #1a1a1a;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Container for parallax images */
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+  overflow: hidden;
+}
+
+/* Parallax image styling */
+.parallax-image {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.parallax-image-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
