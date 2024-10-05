@@ -35,7 +35,7 @@ const ServiceDetails = () => {
               <Parallax
                 key={index}
                 translateY={[-30, 30]} // Parallax effect
-                tagOuter="figure"
+              
                 className="relative w-full h-screen"
               >
                 <div
