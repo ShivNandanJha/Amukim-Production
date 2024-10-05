@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import  { useState, useEffect, useRef } from "react";
 
 
 // Importing images from the local file system
@@ -15,7 +15,7 @@ const images = [img1, img2, img3, img4, img5,img6,img7];
 const App = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [imageList, setImageList] = useState([...images]); // Initialize with local images
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const scrollHeight = document.documentElement.scrollHeight;
     const scrollTop = window.scrollY;
