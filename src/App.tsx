@@ -8,9 +8,9 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div >
+    <div className=" overflow-y-scroll no-scrollbar">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow ">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/services/:serviceType" element={<ServiceAlbum />} />

@@ -6,7 +6,7 @@ import ContactUsSection from "../pages/Contact";
 
 function Homepage() {
   return (
-    <div className=" h-full w-full bg-black">
+    <div className=" h-full w-full bg-black no-scrollbar">
 
           <Hero />
           <AboutMe />
@@ -14,7 +14,7 @@ function Homepage() {
         <Testimonial />
         <ContactUsSection/>
         </div>
-    
+
 
   );
 }
