@@ -23,7 +23,7 @@ import img19 from "../assets/img19.jpg";
 
 export function InViewImagesGrid() {
   return (
-    <div className="h-full w-full overflow-auto">
+    <div className="h-full w-full overflow-auto mt-5">
       <div className="flex h-full items-end justify-center pb-12">
         <InView
           viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}
