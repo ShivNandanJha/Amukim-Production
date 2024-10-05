@@ -124,6 +124,17 @@ const ContactUsSection = () => {
                   name="email"
                   className="h-10 w-full cursor-default rounded-md border border-neutral-800 bg-neutral-950 p-3.5 text-slate-100 transition-colors  duration-500 placeholder:select-none placeholder:text-neutral-500 focus:border-[rgb(207_174_255)] focus:outline-none"
                 />
+                 <input
+          ref={divRef}
+          disabled
+          style={{
+            border: "1px solid rgb(207 174 255)",
+            opacity,
+            WebkitMaskImage: `radial-gradient(30% 30px at ${position.x}px ${position.y}px, black 45%, transparent)`,
+          }}
+          aria-hidden="true"
+          className="border-[rgb(207 174 255)] pointer-events-none absolute left-0 top-0 z-10 h-10 w-full cursor-default rounded-md border bg-[transparent] p-3.5 opacity-0  transition-opacity duration-500 placeholder:select-none"
+        />
               </div>
               <div>
                 <label className="block text-sm font-DMSans">
@@ -144,6 +155,17 @@ const ContactUsSection = () => {
                   className="h-10 w-full cursor-default rounded-md border border-neutral-800 bg-neutral-950 p-3.5 text-slate-100 transition-colors  duration-500 placeholder:select-none placeholder:text-neutral-500 focus:border-[rgb(207_174_255)] focus:outline-none"
                   required
                 />
+                 <input
+          ref={divRef}
+          disabled
+          style={{
+            border: "1px solid rgb(207 174 255)",
+            opacity,
+            WebkitMaskImage: `radial-gradient(30% 30px at ${position.x}px ${position.y}px, black 45%, transparent)`,
+          }}
+          aria-hidden="true"
+          className="border-[rgb(207 174 255)] pointer-events-none absolute left-0 top-0 z-10 h-10 w-full cursor-default rounded-md border bg-[transparent] p-3.5 opacity-0  transition-opacity duration-500 placeholder:select-none"
+        />
               </div>
               <div>
                 <label className="block text-sm font-DMSans">Message</label>
@@ -173,7 +195,7 @@ const ContactUsSection = () => {
           </div>
         </div>
 
-      
+
       </div>
     </section>
   );
