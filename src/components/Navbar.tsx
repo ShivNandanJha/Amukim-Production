@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className= " sticky top-0 z-10 bg-gray-900 text-white px-4 py-2 flex items-center justify-between shadow-lg ">
+    <nav className= "sticky top-0 z-10 bg-gray-900 text-white px-4 py-2 flex items-center justify-between shadow-lg ">
       {/* Logo at the left corner */}
       <div>
         <Link to="/">

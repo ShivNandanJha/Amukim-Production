@@ -2,10 +2,11 @@ import{ useState, useEffect } from "react";
 import img1 from "../assets/img4.jpg";
 import img2 from "../assets/img5.jpg";
 import img3 from "../assets/img3.jpg";
+import img4 from '../assets/img4.jpg'
 import logo from "../assets/logo.png";
 
 const Hero = () => {
-  const images = [img1, img2,img3];
+  const images = [img1, img2,img3,img4];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,7 +40,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg font-Babes">
           Amukim Production
               </h1>
-              <p className=" w-1/2 md:w-auto  md:p-10 text-2xl text-white drop-shadow-lg font-DMSans">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reiciendis dolor aut animi laudantium expedita ut. Repellendus, voluptatibus. Nobis, quaerat?</p>
+              <p className=" w-1/2 md:w-auto  md:p-10 text-2xl text-white drop-shadow-lg font-DMSans">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
   );
