@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import ServiceAlbum from "./pages/ServiceAlbum";
 import Footer from "./components/Footer";
+import { InViewImagesGrid } from "./pages/Gallery";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/services/:serviceType" element={<ServiceAlbum />} />
+          <Route path="/gallery" element={<InViewImagesGrid/>} />
         </Routes>
       </main>
       <Footer />

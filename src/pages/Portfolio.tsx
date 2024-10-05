@@ -24,7 +24,7 @@ import img19 from "../assets/img19.jpg";
 export function InViewImagesGrid() {
   return (
     <div className="h-full w-full overflow-auto">
-      <div className="flex h-full items-end justify-center pb-12">
+      <div className="flex h-[2000px] items-end justify-center pb-12">
         <InView
           viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}
           variants={{
@@ -41,38 +41,7 @@ export function InViewImagesGrid() {
         >
           <div className="columns-2 gap-4 px-8 sm:columns-3">
             {[
-              img1,
-              img2,
-              img3,
-              img4,
-              img5,
-              img6,
-              img7,
-              img1,
-              img2,
-              img3,
-              img4,
-              img5,
-              img6,
-              img7,
-              img8,
-              img9,
-              img10,
-              img11,
-              img12,
-              img13,
-              img14,
-              img15,
-              img16,
-              img17,
-              img18,
-              img19,  img1,
-              img2,
-              img3,
-              img4,
-              img5,
-              img6,
-              img7,
+             
               img1,
               img2,
               img3,
