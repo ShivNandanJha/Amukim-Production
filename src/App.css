@@ -175,15 +175,13 @@
 .scroll-container {
   scroll-snap-type: y mandatory;
 }
-
 /* Parallax section styling */
 .parallax-section {
   height: 100vh; /* Full-screen height */
-  background-size: cover;
+  background-size: cover; /* Ensure the image covers the container and crops the excess */
   background-position: center;
   background-attachment: fixed; /* Creates the parallax effect */
   position: relative;
-  scroll-snap-align: start; /* Ensures each image snaps into place */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,9 +192,32 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
+  text-align: center; /* Center text for smaller devices */
 }
 
-/* Ensures smooth scrolling */
-.scroll-container {
+/* Ensure smooth scrolling */
+html {
   scroll-behavior: smooth;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+  .parallax-section {
+    height: 70vh; /* Adjust height for small screens */
+    background-attachment: scroll; /* Disable parallax on small screens to improve performance */
+  }
+
+  .overlay h1 {
+    font-size: 2rem; /* Make the text smaller on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-section {
+    height: 60vh; /* Further reduce height for very small devices */
+  }
+
+  .overlay h1 {
+    font-size: 1.5rem; /* Make the text even smaller on extra small screens */
+  }
 }
