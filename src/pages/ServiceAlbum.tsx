@@ -6,11 +6,11 @@ import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img1.jpg';
-import img5 from '../assets/category-1.jpg';
-import img6 from '../assets/category-2.jpg';
-import img7 from '../assets/category-3.jpg';
+import img5 from '../assets/img4.jpg';
+import img6 from '../assets/img5.jpg';
+import img7 from '../assets/img8.jpg';
 
-const images = [img1, img2, img3, img4, img5,img6,img7];
+const images = [img5, img2, img3, img1, img4, img5,img6,img7];
 
 const App = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
