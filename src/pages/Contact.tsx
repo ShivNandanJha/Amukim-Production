@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
 import 'leaflet/dist/leaflet.css'; // Leaflet CSS for map
 
 const ContactUsSection = () => {
@@ -24,7 +24,7 @@ const ContactUsSection = () => {
     const whatsappURL = `https://wa.me/+918116141929?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, '_blank');
   };
-  const position = [51.505, -0.09]; // Set this to your desired coordinates
+
   return (
     <section className="bg-gray-900 text-white py-12" id="contact">
       <div className="container mx-auto px-4">
@@ -103,7 +103,7 @@ const ContactUsSection = () => {
         {/* Map Section */}
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-center mb-4">Find Us Here</h3>
-         
+
         </div>
       </div>
     </section>
