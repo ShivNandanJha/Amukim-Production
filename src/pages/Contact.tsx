@@ -24,7 +24,7 @@ const ContactUsSection = () => {
     const whatsappURL = `https://wa.me/+918116141929?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, '_blank');
   };
-
+  const position = [51.505, -0.09]; // Set this to your desired coordinates
   return (
     <section className="bg-gray-900 text-white py-12" id="contact">
       <div className="container mx-auto px-4">
@@ -103,17 +103,17 @@ const ContactUsSection = () => {
         {/* Map Section */}
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-center mb-4">Find Us Here</h3>
-          <MapContainer center={[51.505, -0.09]} zoom={13} className="h-96 w-full rounded-lg">
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution="&copy; OpenStreetMap contributors"
-            />
-            <Marker position={[51.505, -0.09]}>
-              <Popup>
-                123 Photographer St, City, Country
-              </Popup>
-            </Marker>
-          </MapContainer>
+          <MapContainer center={position} zoom={13} className="w-full h-96">
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          <Marker position={position}>
+            <Popup>
+              A pretty CSS3 popup. <br /> Easily customizable.
+            </Popup>
+          </Marker>
+        </MapContainer>
         </div>
       </div>
     </section>
