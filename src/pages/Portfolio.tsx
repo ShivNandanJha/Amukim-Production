@@ -10,7 +10,6 @@ import img6 from "../assets/img5.jpg";
 import img7 from "../assets/img8.jpg";
 import img8 from "../assets/img9.jpg";
 
-import img19 from "../assets/img19.jpg";
 
 export function InViewImagesGrid() {
   return (
@@ -42,7 +41,7 @@ export function InViewImagesGrid() {
               img7,
               img8,
 
-              
+
             ].map((imgSrc, index) => {
               return (
                 <motion.div
