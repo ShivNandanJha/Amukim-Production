@@ -103,17 +103,7 @@ const ContactUsSection = () => {
         {/* Map Section */}
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-center mb-4">Find Us Here</h3>
-          <MapContainer center={position} zoom={13} className="w-full h-96">
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          <Marker position={position}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+         
         </div>
       </div>
     </section>
