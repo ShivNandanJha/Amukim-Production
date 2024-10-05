@@ -3,6 +3,7 @@ import AboutMe from "../pages/About";
 import Services from "../pages/Services";
 import Testimonial from "../pages/Testimonials";
 import ContactUsSection from "../pages/Contact";
+import Gallery from "../pages/Gallery";
 
 function Homepage() {
   return (
@@ -10,9 +11,11 @@ function Homepage() {
 
           <Hero />
           <AboutMe />
-        <Services />
+      <Services />
+      <Gallery/>
         <Testimonial />
-        <ContactUsSection/>
+      <ContactUsSection />
+
         </div>
 
 
