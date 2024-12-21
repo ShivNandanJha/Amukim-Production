@@ -3,7 +3,7 @@ import AboutMe from "../pages/About";
 import Services from "../pages/Services";
 import Testimonial from "../pages/Testimonials";
 import ContactUsSection from "../pages/Contact";
-import Gallery from "../pages/Wedding";
+import Gallery from "../pages/PhotoRotate";
 import { InViewImagesGrid } from "../pages/Portfolio";
 
 function Homepage() {

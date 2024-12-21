@@ -10,16 +10,14 @@ import img5 from '../assets/img4.jpg';
 // import img7 from '../assets/img8.jpg';
 
 const imagesWithDescriptions = [
-  { src: img5,heading:"Wedding Photography", description: "Capture the most precious moments of your special day with our professional photography services." },
-  { src: img2, heading:"Candid Photography", description: "Immortalize those genuine smiles, laughter, and tears with candid shots that tell your story naturally." },
-  { src: img3,heading:"Traditional Photography",     description: "A mix of posed portraits and group photos with family and friends to ensure no one is left out." },
-  { src: img1,heading:"Pre-Wedding Shoots", description: "Celebrate your love story with picturesque and creative pre-wedding sessions at stunning locations." },
-  { src: img4,heading:"Post-Wedding Shoots", description: "Recreate the magic after the big day with romantic post-wedding sessions." },
-  { src: img2,heading:"Wedding Cinematography", description: "Relive your wedding day with cinematic videos that evoke emotions and create timeless memories." },
+  { src: img5,heading:"Corporate Photography", description: "Professional images for brochures, websites, and marketing campaigns." },
+  { src: img2, heading:"Event Photography", description: "Coverage for corporate events, conferences, and product launches." },
+  { src: img3,heading:"Brand Storytelling",     description: "Unique visuals that tell your brand’s story, engaging your audience authentically." },
+  { src: img1,heading:"Interior & Architecture", description: "High-quality photos to highlight real estate or design projects." },
 
 ];
 
-const Wedding = () => {
+const Commercial = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [imageList, setImageList] = useState([...imagesWithDescriptions]); // Initialize with images and descriptions
   const [, setScrollPosition] = useState(0);
@@ -65,4 +63,4 @@ const Wedding = () => {
   );
 };
 
-export default Wedding;
+export default Commercial

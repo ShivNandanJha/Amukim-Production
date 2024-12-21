@@ -4,36 +4,49 @@ import cat2 from "../assets/category-2.jpg";
 import cat3 from "../assets/category-3.jpg";
 import cat4 from "../assets/category-4.jpg";
 import cat5 from "../assets/category-5.jpg";
+import cat6 from "../assets/category-6.jpg";
 
 const services = [
   {
     name: "Portrait Photography",
+    description:
+      "Celebrate individuality and capture unique personalities with our professional portrait photography services.",
     image: cat1,
     route: "/services/portrait",
   },
   {
-    name: "Wedding Photography",
+    name: "Wedding Photography & Videography",
+    description:
+      "Capture the most precious moments of your special day with our professional photography services.",
     image: cat2,
     route: "/services/wedding",
   },
   {
     name: "Commercial Photography",
+    description:
+      "Elevate your brand with captivating visuals designed to showcase your business and services.",
     image: cat3,
     route: "/services/commercial",
   },
   {
-    name: "Landscape Photography",
+    name: "Product Photography",
+    description:
+      "Capture the most precious moments of your special day with our professional photography services.",
     image: cat4,
     route: "/services/landscape",
   },
   {
     name: "Fashion Photography",
+    description:
+      "Turn creativity into stunning visuals with our fashion photography expertise.",
     image: cat5,
     route: "/services/fashion",
   },
   {
-    name: "Model Photography",
-    image: cat2,
+    name: "Photo Album and Printing",
+    description:
+      "Capture the most precious moments of your special day with our professional photography services.",
+    image: cat6,
     route: "/services/model",
   },
 ];
@@ -60,6 +73,9 @@ const Services = () => {
               <h3 className="font-DMSans service-name absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-500">
                 {service.name}
               </h3>
+              <p className="text-white absolute text-lg  inset-0  flex items-end  p-5 opacity-100 ">
+                {service.description}
+              </p>
 
               {/* "See More" Button */}
               <div className="see-more-button absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -70,6 +86,7 @@ const Services = () => {
                   </button>
                 </Link>
               </div>
+
             </div>
           ))}
         </div>

@@ -1,4 +1,4 @@
-import About from '../assets/about.jpg'
+import About from '../assets/Anmol.jpg'
 
 const AboutUs = () => {
   return (
@@ -16,9 +16,9 @@ const AboutUs = () => {
         {/* Right Text Content */}
         <div className="md:w-1/2 md:pl-8">
           <h2 className="text-8xl font-bold mb-4 font-Babes">Hi, I am <br /> Anmol Gurang</h2>
-          <h3 className="text-4xl mb-4 font-DMSans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, minus.</h3>
+          <h3 className="text-4xl mb-4 font-DMSans">Transforming Ideas into Compelling Visual Stories through Videos & Photos</h3>
           <p className="text-gray-400 font-DMSans">
-            I am a passionate photographer dedicated to capturing moments that tell stories. With a focus on creativity and attention to detail, I strive to provide stunning images that you will cherish forever.
+          We are specialize in crafting engaging and captivating videos & photos that resonate with audiences. With a keen eye for storytelling and a passion for visual communication, We bring ideas to life through dynamic visuals, compelling narratives, and innovative editing techniques. Our mission is to help brands, individuals, and organizations effectively convey their messages and stories through the power of video.
           </p>
         </div>
       </div>
