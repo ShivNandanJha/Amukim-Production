@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
-import img4 from '../assets/img1.jpg';
+
 import img5 from '../assets/img4.jpg';
 // import img6 from '../assets/img5.jpg';
 // import img7 from '../assets/img8.jpg';
@@ -14,7 +14,7 @@ const imagesWithDescriptions = [
   { src: img2, heading:"Professional Headshots", description: "Perfect for resumes, social media profiles, and corporate use, presenting you at your best." },
   { src: img3,heading:"Family Portraits",     description: "Cherish the bond with your loved ones through beautiful group photos that last a lifetime." },
   { src: img1,heading:"Creative Portraits", description: "Experiment with styles, lighting, and props to create artistic portraits tailored to your personality." },
-  
+
 ];
 
 const Potrait = () => {

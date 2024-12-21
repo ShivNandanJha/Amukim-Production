@@ -100,7 +100,7 @@ export function FeaturesSectionDemo() {
 const Feature = ({
   title,
   description,
-  icon,
+
   index,
 }: {
   title: string;
